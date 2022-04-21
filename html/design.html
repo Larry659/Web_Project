@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+    <link rel="stylesheet" href="design.css">
+   
+    <script>
+        // Add the following code if you want the name of the file appear on select
+        $(".custom-file-input").on("change", function() {
+          var fileName = $(this).val().split("\\").pop();
+          $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+        </script>
+</head>
+<body style="background-color:#385269 ;">
+    <div class="container-fluid" >
+        <div id="top">
+            <div class="subtop">
+                <img  class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIQuf-x_Hbu6ISp4p5HVtdPkRGQmKt29hTRw&usqp=CAU" class="rounded" alt="Cinque Terre">
+               
+            </div>
+            <h4 style="color: #85ed0c;">Test112233</h4>
+        </div>
+        
+        <input type="text" name="email" id="input" placeholder="Email, phone or Sky"
+                            style="height: 40px; width: 95%; font-size: 13px">
+
+        <div id="top2">
+            <div class="upload">
+                 <input type="file" class="custom-file-input" id="customFile">
+                <label class="custom-file-label" for="customFile">Choose file</label>
+            </div>
+           
+        </div>
+        <div id="bottom">
+    
+    <button type="button" class="btn btn-success" style="margin: auto; background-color: #85ed0c; border-radius: 5px;" >Success</button>
+        </div>
+        
+    </div>
+</body>
+</html>

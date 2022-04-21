@@ -1,0 +1,27 @@
+body {
+  padding: 50px;
+}
+.para {
+  color: white;
+  text-align: center;
+}
+.flex {
+  display: inline-flex;
+}
+#first {
+  /* width: 35%; */
+  /* height: 30%; */
+  padding: 10px;
+  border-radius: 10px;
+  border-style: double;
+  background-color: black;
+}
+#second {
+  /* min-width: 200px; */
+  /* word-wrap: break-word; */
+  /* height: 30%; */
+  background-color: black;
+  color: white;
+  margin-left: 20px;
+  padding: 10px;
+}
